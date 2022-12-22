@@ -2,7 +2,6 @@ import './App.css';
 import Header from './MyComponents/Header';
 import Footer from "./MyComponents/Footer";
 import Todos from "./MyComponents/Todos";
-import Todo from './MyComponents/Todo';
 
 function App() {
   let todos = [
@@ -20,11 +19,10 @@ function App() {
       desc: 'You should read "Atomic habits"'
     }
   ]
-
   return (
     <>
       <Header title='Todos List' />
-      <Todos todos = {todos}/>
+      <Todos todos={todos} />
       <Footer />
     </>
   );
