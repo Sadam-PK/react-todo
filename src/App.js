@@ -8,8 +8,8 @@ function App() {
   function onDelete(todo) {
     console.log('Hey bro, i am ondelete', todo)
 
-    setTodos(todos.filter((e)=>{
-      return e!==todo
+    setTodos(todos.filter((e) => {
+      return e !== todo
     }));
   }
 
