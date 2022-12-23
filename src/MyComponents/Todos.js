@@ -3,7 +3,7 @@ import Todo from "./Todo";
 export default function Todos(props) {
 
     return (
-        <div className="container">
+        <div className="container my-3">
             <h3 className="text-center">Todos List</h3>
 
             {props.todos.length === 0 ? 'no todos to display' :
