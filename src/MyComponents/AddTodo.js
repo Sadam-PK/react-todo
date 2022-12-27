@@ -16,7 +16,7 @@ export default function AddTodo(props) {
             <h3>Add a todo</h3>
             <form onSubmit={submit}>
                 <div className="mb-3">
-                    <label for="title" className="form-label">Todo Title</label>
+                    <label htmlFor="title" className="form-label">Todo Title</label>
                     <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="form-control" id="title" />
                 </div>
                 <div className="mb-3">
