@@ -4,6 +4,7 @@ export default function AddTodo() {
     return (
         <>
             <div className="container my-3">
+                <h3>Add a todo</h3>
                 <form>
                     <div className="mb-3">
                         <label for="title" className="form-label">Todo Title</label>
