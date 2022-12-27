@@ -6,12 +6,24 @@ import AddTodo from "./MyComponents/AddTodo";
 import React, { useState } from 'react';
 
 function App() {
+
   function onDelete(todo) {
     console.log('Hey bro, i am ondelete', todo)
 
     setTodos(todos.filter((e) => {
       return e !== todo
     }));
+  }
+
+  const addTodo = (title, desc) => {
+    let sno = todos[todos.length - 1].sno + 1;
+
+    const myTodo = {
+      sno: sno,
+      title: title,
+      desc: desc
+    }
+    setTodos([...todos, myTodo]);
   }
 
   const [todos, setTodos] = useState([
@@ -32,7 +44,7 @@ function App() {
   return (
     <>
       <Header title='Todos List' />
-      <AddTodo/>
+      <AddTodo addTodo={addTodo} />
       <Todos todos={todos} onDelete={onDelete} />
       <Footer />
     </>
