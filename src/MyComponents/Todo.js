@@ -10,6 +10,7 @@ export default function Todo(props) {
                 <button className="btn btn-sm btn-danger"
                     onClick={() => { props.onDelete(props.todo) }}>Delete</button>
                 <hr/>
+                
             </>
         </div>
 
